@@ -1,6 +1,6 @@
 <settings>
   <baseconfig>
-    <workingdir>D:\dropbox\guildlua\1.0</workingdir>
+    <workingdir>D:\dropbox\GuildLUA-Core\1.0</workingdir>
     <databasefolder>db</databasefolder>
     <wowfolder>C:\WoW</wowfolder>
     <logfile>LUA_CSV.log</logfile>

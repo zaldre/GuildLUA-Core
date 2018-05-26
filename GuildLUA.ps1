@@ -1,6 +1,6 @@
 PARAM(
     [switch]$db,
-    [string]$filename,
+    [string]$filename
 )
 $ErrorActionPreference = "stop"
 
@@ -65,19 +65,6 @@ catch {
     throw "ERROR: Unable to load the module 'CTRT_functions.psm1', please ensure this file exists in the working directory"
 }
 
-
-#Update check
-$updateFile = $Config.settings.baseconfig.workingdir + '\db\update.csv'
-$parent = Split-Path -Path $PSScriptroot -Parent
-$version = $PSScriptroot.Split('\')[-1]
-$file = $parent + "\Updater.ps1" + " -version $version"
-if (!(test-path $updatefile)) {
-    &$file
-}
-else {
-    $daysBetween = New-Timespan -end (Get-Date) -start (get-date (Import-Csv $updateFile | Select-Object -ExpandProperty Date))
-    if ($daysBetween.days -ge 7) { &$file }
-}
 
 #FLAGS SECTION START
 

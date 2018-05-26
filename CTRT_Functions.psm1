@@ -4,7 +4,6 @@ $CharacterReportFolder = $RPSub + 'Character\'
 $RaidReportFolder = $RPSub + 'Raids\'
 if ((test-path $Config.settings.baseconfig.workingdir) -eq $false) { mkdir $Config.settings.baseconfig.workingdir }
 if ((test-path $DBSub) -eq $false) { mkdir $DBSub }
-if ((test-path $RPSub) -eq $false) { mkdir $RPSub }
 $IDLookupPrefix = 'https://classicdb.ch/?item=' #Used in loot output, PREFIX + ITEMID = URL
 $joinfile = $dbsub + 'join.csv'
 $leavefile = $dbsub + 'leave.csv'
