@@ -1,0 +1,19 @@
+<settings>
+  <baseconfig>
+    <workingdir>D:\dropbox\guildlua\1.0</workingdir>
+    <databasefolder>db</databasefolder>
+    <wowfolder>C:\WoW</wowfolder>
+    <logfile>LUA_CSV.log</logfile>
+    <timezoneID>Central Europe Standard Time</timezoneID>
+  </baseconfig>
+  <reporting>
+    <convservertime>True</convservertime>
+    <qualityfilter>3</qualityfilter>
+    <raiddays>Thursday,Sunday</raiddays>
+    <raidtimeonly>True</raidtimeonly>
+  </reporting>
+  <updates>
+    <currentversion>1.1</currentversion>
+    <lastcheck>2018-04-12 0:27:18</lastcheck>
+  </updates>
+</settings>
